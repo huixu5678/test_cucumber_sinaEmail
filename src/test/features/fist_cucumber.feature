@@ -24,6 +24,5 @@
         | username | password |
         | test1    | pwd1     |
         | test2    | pwd2     |
-        | test3    | pwd3     |
 
 
