@@ -15,9 +15,9 @@ import io.cucumber.testng.CucumberOptions;
 @CucumberOptions(
         features = "src/test/features/fist_cucumber.feature",
         plugin = {"pretty",
-                "json:target/report.json"},
+                "json:target/report1.json"},
         glue = ("com.steps"),
-        tags = ("@p1")//@p0 表示只运行有这个标签的case， ~@p0表示运行除了p0以外的所有标签
+        tags = ("@p0")//@p0 表示只运行有这个标签的case， ~@p0表示运行除了p0以外的所有标签
 )
 public class runTest3 extends AbstractTestNGCucumberTests {
 }
