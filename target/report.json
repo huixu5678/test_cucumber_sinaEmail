@@ -1,0 +1,177 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-05-24T08:37:34.322Z",
+        "line": 4,
+        "name": "测试正确的账号登录",
+        "description": "",
+        "id": "163登录功能;测试正确的账号登录",
+        "type": "scenario",
+        "keyword": "场景",
+        "steps": [
+          {
+            "result": {
+              "duration": 11603000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "我打开sina网址",
+            "match": {
+              "location": "com.steps.step.openweb()"
+            },
+            "keyword": "当"
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "我在email文本框输入\"huixu1208@sina.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "huixu1208@sina.com",
+                  "offset": 13
+                }
+              ],
+              "location": "com.steps.step.sendkeysEmail(java.lang.String)"
+            },
+            "keyword": "并且"
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "我在密码框输入\"huixu5678\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "huixu5678",
+                  "offset": 8
+                }
+              ],
+              "location": "com.steps.step.sendkeysPass(java.lang.String)"
+            },
+            "keyword": "并且"
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "我点击登录按钮",
+            "match": {
+              "location": "com.steps.step.clickLogin()"
+            },
+            "keyword": "当"
+          },
+          {
+            "result": {
+              "duration": 5067000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "我登录成功",
+            "match": {
+              "location": "com.steps.step.loginSuccess()"
+            },
+            "keyword": "那么"
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Automation"
+          },
+          {
+            "name": "@p1"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-05-24T08:37:51.026Z",
+        "line": 11,
+        "name": "测试正确的账号登录2",
+        "description": "",
+        "id": "163登录功能;测试正确的账号登录2",
+        "type": "scenario",
+        "keyword": "场景",
+        "steps": [
+          {
+            "result": {
+              "duration": 10715000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "我打开sina网址",
+            "match": {
+              "location": "com.steps.step.openweb()"
+            },
+            "keyword": "当"
+          },
+          {
+            "result": {
+              "duration": 120000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "我用用户名:\"huixu1208@sina.com\",密码:\"huixu5678\"登录",
+            "match": {
+              "arguments": [
+                {
+                  "val": "huixu1208@sina.com",
+                  "offset": 7
+                },
+                {
+                  "val": "huixu5678",
+                  "offset": 31
+                }
+              ],
+              "location": "com.steps.step.login(java.lang.String,java.lang.String)"
+            },
+            "keyword": "并且"
+          },
+          {
+            "result": {
+              "duration": 5044000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "我登录成功",
+            "match": {
+              "location": "com.steps.step.loginSuccess()"
+            },
+            "keyword": "并且"
+          },
+          {
+            "result": {
+              "duration": 1066000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "关闭浏览器",
+            "match": {
+              "location": "com.steps.step.close()"
+            },
+            "keyword": "并且"
+          }
+        ],
+        "tags": [
+          {
+            "name": "@p1"
+          }
+        ]
+      }
+    ],
+    "name": "163登录功能",
+    "description": "",
+    "id": "163登录功能",
+    "keyword": "功能",
+    "uri": "file:src/test/features/fist_cucumber.feature",
+    "tags": []
+  }
+]
